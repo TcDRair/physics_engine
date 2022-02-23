@@ -99,6 +99,7 @@ class Sprite {
         if (!this.IsOuterCircle(middle, radius)) {
             // 임의의 삼각형 외접원 중 가장 작은 원을 구한다.
             // radius = float.maxValue;
+            radius = Number.MAX_SAFE_INTEGER;
     
             for (let i=0; i<length; i++) {
                 for (let j=i+1; j<length; j++) {
